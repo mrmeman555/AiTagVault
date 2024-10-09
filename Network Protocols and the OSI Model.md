@@ -1,30 +1,29 @@
+---
+tags:
+  - protocols
+Desc: This note contains all networking protocols
+---
+
 ## Table of Contents
 
-- [Protocol Summary Table](#protocol-summary-table)
-- [TLS (Transport Layer Security)](#tls)
-- [NetBIOS (Network Basic Input/Output System)](#netbios)
-- [SSL (Secure Sockets Layer)](#ssl)
-- [DNS (Domain Name System)](#dns)
-- [FTP (File Transfer Protocol)](#ftp)
-- [TCP (Transmission Control Protocol)](#tcp)
-- [IP (Internet Protocol)](#ip)
-- [SMTP (Simple Mail Transfer Protocol)](#smtp)
-- [IMAP (Internet Message Access Protocol)](#imap)
-- [POP3 (Post Office Protocol version 3)](#pop3)
-- [All Protocols - GOLD](#all-protocols---gold)
-- [ICMP (Internet Control Message Protocol)](#icmp)
-- [OAuth (Open Authorization)](#oauth)
-- [Kerberos](#kerberos)
-- [RADIUS (Remote Authentication Dial-In User Service)](#radius)
-- [RDP (Remote Desktop Protocol)](#rdp)
-- [LDAP (Lightweight Directory Access Protocol)](#ldap)
-- [DHCP (Dynamic Host Configuration Protocol)](#dhcp)
-
-## Protocol Summary Table
-
-
-
-## Protocol Details 
+- [[#TLS (Transport Layer Security)|TLS (Transport Layer Security)]]
+- [[#NetBIOS (Network Basic Input/Output System)|NetBIOS (Network Basic Input/Output System)]]
+- [[#SSL (Secure Sockets Layer)|SSL (Secure Sockets Layer)]]
+- [[#DNS (Domain Name System)|DNS (Domain Name System)]]
+- [[#FTP (File Transfer Protocol)|FTP (File Transfer Protocol)]]
+- [[#TCP (Transmission Control Protocol)|TCP (Transmission Control Protocol)]]
+- [[#IP (Internet Protocol)|IP (Internet Protocol)]]
+- [[#SMTP (Simple Mail Transfer Protocol)|SMTP (Simple Mail Transfer Protocol)]]
+- [[#IMAP (Internet Message Access Protocol)|IMAP (Internet Message Access Protocol)]]
+- [[#POP3 (Post Office Protocol version 3)|POP3 (Post Office Protocol version 3)]]
+- [[#All Protocols - GOLD|All Protocols - GOLD]]
+- [[#ICMP (Internet Control Message Protocol)|ICMP (Internet Control Message Protocol)]]
+- [[#OAuth (Open Authorization)|OAuth (Open Authorization)]]
+- [[#Kerberos|Kerberos]]
+- [[#RADIUS (Remote Authentication Dial-In User Service)|RADIUS (Remote Authentication Dial-In User Service)]]
+- [[#RDP (Remote Desktop Protocol)|RDP (Remote Desktop Protocol)]]
+- [[#LDAP (Lightweight Directory Access Protocol)|LDAP (Lightweight Directory Access Protocol)]]
+- [[#DHCP (Dynamic Host Configuration Protocol)|DHCP (Dynamic Host Configuration Protocol)]]
 
 ### TLS (Transport Layer Security)
 

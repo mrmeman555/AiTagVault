@@ -1,8 +1,12 @@
 ---
 tags:
+  - obsidian
+  - github
+Desc: Setting up git for obsidian
 ---
+# OSI Overview
 
-## Setting Up Git for Your Obsidian Vault - A Detailed Guide
+### Setting Up Git for Your Obsidian Vault - A Detailed Guide
 
 This guide outlines the steps to set up Git for version control of your Obsidian vault and connect it to a GitHub repository, along with troubleshooting tips based on real-world experiences.
 
@@ -75,33 +79,45 @@ This guide outlines the steps to set up Git for version control of your Obsidian
 * **Add the Remote:** In your terminal, navigate to your Obsidian vault directory. Type `git remote add origin git@github.com:<username>/<repository>.git` and press Enter, replacing `<username>` with your GitHub username and `<repository>` with the name of your repository.
 * **Verify the Remote URL:** Type `git remote -v` and press Enter. You should see output similar to:
     ```
-    origin  git@github.com:<username>/<repository>.git (fetch)
-    origin  git@github.com:<username>/<repository>.git (push)
-    ```
-* **Double-Check Case:** Make sure the capitalization of the repository name in the remote URL matches the *exact* capitalization on GitHub. 
+### Application Layer Interactions
 
-**11. Renormalize Existing Files (If Necessary):**
+- **Obsidian Vault and Git:**
+    - **#obsidian:** Obsidian is the application we're using for note-taking.
+    - **#git:** Git is the version control system we're integrating with Obsidian. 
+- **Git Commands:**
+    - **#git:** We'll use Git commands like `git init`, `git add`, `git commit`, `git push`, and `git pull` to manage our vault. 
+- **GitHub Web Interface:**
+    - **#github:** We'll interact with GitHub's website to create a repository, manage settings, and view our synced vault. 
 
-* **Address Line Ending Inconsistencies:** Run the command `git add --renormalize .` to normalize line endings in all files.
+### Presentation Layer: Securing Communication
 
-**12. Make Your First Commit:**
+- **SSH Key Generation and Management:**
+    - **#protocols/ssh:** SSH is the secure protocol we'll use to communicate with GitHub. 
+    - **#github:** GitHub uses SSH keys for secure authentication.
 
-* **Stage All Changes:** Type `git add .` and press Enter to stage all the files that Git should track (your notes, attachments, and the `.gitignore` file). 
-* **Commit:** Type `git commit -m "Initial commit"` and press Enter. 
+### Session Layer: Establishing Connections
 
-**13. Push to GitHub:**
+- **SSH Connection:**
+    - **#protocols/ssh:** We'll establish a secure SSH connection to interact with our GitHub repository. 
+    - **#github:** This connection allows us to push and pull changes to our remote repository on GitHub.
+- **Git Remote:**
+    - **#git:** We'll configure a "remote" in Git to point to our GitHub repository. 
+    - **#github:** This establishes the link between our local and remote repositories. 
 
-* **Initial Push:**  Type `git push -u origin master` (or `git push -u origin main`, if applicable) and press Enter. 
+### Transport Layer Protocols
 
-**14. Troubleshooting Tips:**
+- **SSH Protocol:**
+    - **#protocols/ssh:** SSH relies on the TCP protocol for reliable data transmission.
+- **Git Protocol:**
+    - **#git:** Git can use either SSH (over TCP) or HTTPS (over TCP) to transfer data. 
 
-* **"Permission denied (publickey)":** 
-    * Verify your SSH key is listed in your GitHub SSH settings.
-    * Check your SSH agent (`ssh-add -l`) and add your key if it's not listed (`ssh-add ~/.ssh/id_ed25519`).
-    * Restart your terminal.
-* **"Repository not found":**
-    * Double-check that the repository URL in your `git remote -v` output matches the exact URL on GitHub, including capitalization. 
-    * Make sure the repository exists and you have the correct access permissions. 
-* **"Everything up-to-date":** This message is normal if there are no new changes to push since your last commit. 
+### Network Layer Routing
 
-**Congratulations! Your Obsidian vault is now under version control with Git and connected to your GitHub repository.** You're ready to track your changes, collaborate with others (if desired), and enjoy the peace of mind that comes with a well-managed and backed-up knowledge base! 
+- **IP Addressing:**
+    - **#git, #github, #protocols/ssh:** All network communication, including Git and SSH interactions, relies on IP addressing for routing data.
+
+### Data Link & Physical Layers: Network Infrastructure
+
+- **Underlying Network:**
+    - **#git, #github, #protocols/ssh, #obsidian:** All these technologies ultimately depend on the physical and data link layers of your network infrastructure. 
+
