@@ -1,0 +1,10 @@
+# Ignore Obsidian settings and plugin data
+.obsidian/
+.trash/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore any log files
+*.log
