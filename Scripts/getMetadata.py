@@ -48,3 +48,6 @@ if __name__ == "__main__":
             f.write(f"**Description:** {data['description']}\n\n")
             f.write(f"**Headers:** {', '.join(data['headers'])}\n\n")
             f.write("\n---\n\n")
+
+    print(f"Metadata extracted and saved to: {output_file}") 
+    print(f"Current Working Directory: {os.getcwd()}") # Print the current working directory

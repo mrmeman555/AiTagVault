@@ -3,7 +3,7 @@ name: Update Tag Index
 on:
   push:
     branches:
-      - master # Trigger on pushes to the master branch (adjust if needed)
+      - master 
 
 jobs:
   update-tag-index:
@@ -11,16 +11,25 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12.7' # Specify your Python version
+          python-version: '3.12.7' 
 
       - name: Install dependencies
         run: |
           pip install frontmatter
 
+      - name: Change working directory
+        run: cd Inbox # Navigate to the Inbox folder
+
       - name: Run Python script
         run: |
-          python Scripts/getMetadata.py  # Correct path to your script
+          python ../Scripts/getMetadata.py # Correct relative path to the script
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update Tag Index"
+          file_pattern: metadata_output.md 
