@@ -6,9 +6,9 @@ Description: All things Anaconda Related
 
 
 I need to set env variable
-# Anaconda Cheat Sheet - Essential Commands and Syntax
+### Anaconda Cheat Sheet - Essential Commands and Syntax
 
-## Environment Management
+### Environment Management
 
 - **Create:** `conda create -n <environment_name> python=<python_version>` 
 - **Activate:** `conda activate <environment_name>`
@@ -16,7 +16,7 @@ I need to set env variable
 - **List:** `conda env list`
 - **Remove:**  `conda env remove -n <environment_name>`
 
-## Package Management
+### Package Management
 
 - **Install:** `conda install <package_name>`
 - **Install Multiple:** `conda install <package_1> <package_2> ...`
@@ -26,7 +26,7 @@ I need to set env variable
 - **Search:**  `conda search <package_name>`
 - **List Installed Packages:** `conda list`
 
-## Working with Packages (pip)
+### Working with Packages (pip)
 
 - **Install:** `pip install <package_name>` 
 - **Install from Requirements File:** `pip install -r requirements.txt`
@@ -34,7 +34,7 @@ I need to set env variable
 - **List Installed Packages:** `pip list`
 - **Freeze Requirements:**  `pip freeze > requirements.txt`
 
-## Additional Tips
+### Additional Tips
 
 - **Conda Cheat Sheet:** [https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
 - **Anaconda Documentation:** [https://docs.anaconda.com/](https://docs.anaconda.com/)

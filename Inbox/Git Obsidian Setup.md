@@ -4,7 +4,9 @@ tags:
   - github
 Description: Setting up git for obsidian
 ---
-# OSI Overview
+---
+tags: #git #obsidian #github #version-control #application-layer #session-layer #transport-layer #network-layer #datalink-layer #physical-layer 
+---
 
 ### Setting Up Git for Your Obsidian Vault - A Detailed Guide
 
@@ -79,6 +81,41 @@ This guide outlines the steps to set up Git for version control of your Obsidian
 * **Add the Remote:** In your terminal, navigate to your Obsidian vault directory. Type `git remote add origin git@github.com:<username>/<repository>.git` and press Enter, replacing `<username>` with your GitHub username and `<repository>` with the name of your repository.
 * **Verify the Remote URL:** Type `git remote -v` and press Enter. You should see output similar to:
     ```
+    origin  git@github.com:<username>/<repository>.git (fetch)
+    origin  git@github.com:<username>/<repository>.git (push)
+    ```
+* **Double-Check Case:** Make sure the capitalization of the repository name in the remote URL matches the *exact* capitalization on GitHub. 
+
+**11. Renormalize Existing Files (If Necessary):**
+
+* **Address Line Ending Inconsistencies:** Run the command `git add --renormalize .` to normalize line endings in all files.
+
+**12. Make Your First Commit:**
+
+* **Stage All Changes:** Type `git add .` and press Enter to stage all the files that Git should track (your notes, attachments, and the `.gitignore` file). 
+* **Commit:** Type `git commit -m "Initial commit"` and press Enter. 
+
+**13. Push to GitHub:**
+
+* **Initial Push:**  Type `git push -u origin master` (or `git push -u origin main`, if applicable) and press Enter. 
+
+**14. Troubleshooting Tips:**
+
+* **"Permission denied (publickey)":** 
+    * Verify your SSH key is listed in your GitHub SSH settings.
+    * Check your SSH agent (`ssh-add -l`) and add your key if it's not listed (`ssh-add ~/.ssh/id_ed25519`).
+    * Restart your terminal.
+* **"Repository not found":**
+    * Double-check that the repository URL in your `git remote -v` output matches the exact URL on GitHub, including capitalization. 
+    * Make sure the repository exists and you have the correct access permissions. 
+* **"Everything up-to-date":** This message is normal if there are no new changes to push since your last commit. 
+
+**Congratulations! Your Obsidian vault is now under version control with Git and connected to your GitHub repository.** You're ready to track your changes, collaborate with others (if desired), and enjoy the peace of mind that comes with a well-managed and backed-up knowledge base! 
+
+### OSI Model Breakdown:
+
+Here's a breakdown of how the various components of this process map to the OSI model:
+
 ### Application Layer Interactions
 
 - **Obsidian Vault and Git:**
@@ -120,4 +157,3 @@ This guide outlines the steps to set up Git for version control of your Obsidian
 
 - **Underlying Network:**
     - **#git, #github, #protocols/ssh, #obsidian:** All these technologies ultimately depend on the physical and data link layers of your network infrastructure. 
-
