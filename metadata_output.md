@@ -28,7 +28,7 @@
 
 **Description:** All things Anaconda Related
 
-**Headers:** Anaconda Cheat Sheet - Essential Commands and Syntax, Environment Management, Package Management, Working with Packages (pip), Additional Tips, TEST HEADER MOTHER FUCKERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+**Headers:** Anaconda Cheat Sheet - Essential Commands and Syntax, Environment Management, Package Management, Working with Packages (pip), Additional Tips, TEST HEADER MOTHER 
 
 
 ---
