@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Python script
         run: |
-          python getMetadata.py # Replace with your script filename
+          python Scripts/getMetadata.py # Replace with your script filename
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
