@@ -3,7 +3,7 @@ name: Update Tag Index
 on:
   push:
     branches:
-      - master 
+      - master
 
 jobs:
   update-tag-index:
@@ -21,12 +21,9 @@ jobs:
         run: |
           pip install frontmatter
 
-      - name: Change working directory
-        run: cd Inbox # Navigate to the Inbox folder
-
       - name: Run Python script
         run: |
-          python ../Scripts/getMetadata.py # Correct relative path to the script
+          python getMetadata.py  # Now in the root directory
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
