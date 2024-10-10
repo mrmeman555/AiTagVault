@@ -1,3 +1,10 @@
+---
+tags:
+  - Anaconda
+Description: All things Anaconda Related
+---
+
+
 I need to set env variable
 # Anaconda Cheat Sheet - Essential Commands and Syntax
 
@@ -116,3 +123,19 @@ The exact steps vary slightly depending on your operating system:
 Conda channels are online repositories where packages are stored. The default Anaconda channel (defaults) contains a curated set of packages. However, many other community-maintained channels, like conda-forge, provide a wider range of packages.
 
 By specifying the -c conda-forge option, you're telling Conda to look for the frontmatter package in the conda-forge channel.
+
+
+when files in vscode file explorer are green and have a green 'u' next to them, it's because they haven't yet been commited to git for the first time.
+
+
+**Yellow with "M" indicates that the file has been modified since your last Git commit.** Git is keeping track of changes in your project, and it's letting you know that these files have been altered but haven't yet been staged for your next commit.
+
+**Here's a breakdown of the common color codes in VS Code's Git integration:**
+
+- **Green:** New files that have not been added to Git yet (untracked).
+    
+- **Red:** Deleted files.
+    
+- **Blue:** Files that have been modified and have been staged for your next commit (ready to be included in the snapshot).
+    
+- **Yellow (with "M"):** Modified files that have **not** been staged yet.

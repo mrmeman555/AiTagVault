@@ -2,7 +2,7 @@
 tags:
   - obsidian
   - github
-Desc: Setting up git for obsidian
+Description: Setting up git for obsidian
 ---
 # OSI Overview
 

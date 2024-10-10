@@ -1,7 +1,7 @@
 ---
 tags:
   - protocols
-Desc: This note contains all networking protocols
+Description: This note contains all networking protocols
 ---
 
 ## Table of Contents
