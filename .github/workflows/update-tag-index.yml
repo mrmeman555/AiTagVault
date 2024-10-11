@@ -10,10 +10,13 @@ jobs:
   update-tag-index:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Uses the GitHub provided token
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -33,4 +36,4 @@ jobs:
         with:
           commit_message: "Update Tag Index"
           file_pattern: metadata_output.md
-          token: ${{ secrets.GITHUB_TOKEN }}  # Use token for authentication when pushing
+          push_options: '--force'
